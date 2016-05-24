@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:gravity="center"
+        android:text="引导页框架集合"
+        android:textSize="30sp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/guideBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新功能引导页面" />
+
+    <Button
+        android:id="@+id/tabMainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tab引导页" />
+
+    <Button
+        android:id="@+id/slideTabMainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可滑动的tab引导页" />
+
+    <Button
+        android:id="@+id/springTabBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="springTab引导页" />
+</LinearLayout>
