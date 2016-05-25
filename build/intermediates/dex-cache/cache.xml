@@ -29,5 +29,12 @@
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
         <dex dex="/Users/liangjinzhu/Study/WorkspaceDemo/Android/IndicatorViewPager/app/build/intermediates/pre-dexed/debug/classes-9ef575943cb017e0395bdb559dde9b90cf898930.jar" />
     </item>
+    <item
+        jar="/Users/liangjinzhu/Study/WorkspaceDemo/Android/IndicatorViewPager/app/libs/ViewpagerIndicator_1.0.6.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="56fb5d709af9a0173be055705018efd97c92be28">
+        <dex dex="/Users/liangjinzhu/Study/WorkspaceDemo/Android/IndicatorViewPager/app/build/intermediates/pre-dexed/debug/ViewpagerIndicator_1.0.6-1a0eeb2e5030ca6fa1c273cb5a0fd18b55ec43ef.jar" />
+    </item>
 
 </items>
