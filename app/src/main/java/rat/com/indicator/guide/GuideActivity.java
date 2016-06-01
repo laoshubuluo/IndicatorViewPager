@@ -1,4 +1,4 @@
-package rat.com.indicator;
+package rat.com.indicator.guide;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 
 import com.shizhefei.view.indicator.FixedIndicatorView;
 import com.shizhefei.view.indicator.IndicatorViewPager;
+
+import rat.com.indicator.R;
 
 /**
  * Created by liangjinzhu on 16/5/24.
