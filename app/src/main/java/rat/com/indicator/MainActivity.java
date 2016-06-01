@@ -6,6 +6,9 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.Button;
 
+import rat.com.indicator.guide.GuideActivity;
+import rat.com.indicator.tabmain.TabMainActivity;
+
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
 
     private Button guideBtn;
@@ -40,6 +43,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 startActivity(intent);
                 break;
             case R.id.tabMainBtn:
+                intent = new Intent(MainActivity.this, TabMainActivity.class);
+                startActivity(intent);
                 break;
             case R.id.slideTabMainBtn:
                 break;

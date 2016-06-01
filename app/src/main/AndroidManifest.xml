@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GuideActivity"
+            android:name=".guide.GuideActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".tabmain.TabMainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
     </application>
 
