@@ -12,6 +12,9 @@ import android.widget.TextView;
 import com.shizhefei.fragment.LazyFragment;
 import com.shizhefei.view.indicator.Indicator;
 import com.shizhefei.view.indicator.IndicatorViewPager;
+import com.shizhefei.view.indicator.slidebar.LayoutBar;
+import com.shizhefei.view.indicator.slidebar.ScrollBar;
+import com.shizhefei.view.indicator.transition.OnTransitionTextListener;
 
 import rat.com.indicator.R;
 
@@ -36,10 +39,18 @@ public class FirstLayerFragment extends LazyFragment {
         inflater = LayoutInflater.from(getApplicationContext());
         viewPager = (ViewPager) findViewById(R.id.fragment_tablemain_viewPager);
         indicator = (Indicator) findViewById(R.id.fragment_tablemain_indicator);
-        indicatorViewPager = new IndicatorViewPager(indicator, viewPager);
-        indicatorViewPager.setAdapter(new MyAdapter(getChildFragmentManager()));
+        indicator.setScrollBar(new LayoutBar(getApplicationContext(), R.layout.layout_slidebar, ScrollBar.Gravity.CENTENT_BACKGROUND));
+        float unSelectSize = 16;
+        float selectSize = unSelectSize * 1.2f;
+        int unSelectColor = getResources().getColor(R.color.tab_main_text_1);
+        int selectColor = getResources().getColor(R.color.tab_main_text_2);
+        indicator.setOnTransitionListener(new OnTransitionTextListener().setColor(selectColor, unSelectColor).setSize(selectSize, unSelectSize));
+
         // 设置viewpager保留界面不重新加载的页面数量
         viewPager.setOffscreenPageLimit(3);
+
+        indicatorViewPager = new IndicatorViewPager(indicator, viewPager);
+        indicatorViewPager.setAdapter(new MyAdapter(getChildFragmentManager()));
     }
 
     private class MyAdapter extends IndicatorViewPager.IndicatorFragmentPagerAdapter {
